@@ -1,0 +1,5 @@
+build:
+  - CGO_ENABLED=0 go build -a main.go -o ./bin/echo
+
+arguments:
+  - {key: GOECHO, type: string}

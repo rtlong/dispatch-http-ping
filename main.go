@@ -17,8 +17,9 @@ func endpoint() string {
 }
 
 func main() {
-	_, err := http.PostForm(endpoint(), url.Values{"msg": {"Hello"}, "from": {"dispatch"}})
+	resp, err := http.PostForm(endpoint(), url.Values{"msg": {"Hello"}, "from": {"dispatch"}})
 	if err != nil {
 		panic(err)
 	}
+	defer resp.Body.Close()
 }

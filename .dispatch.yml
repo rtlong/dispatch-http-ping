@@ -1,6 +1,4 @@
 build:
-  - CGO_ENABLED=0 go build -o ./bin/http_ping -a main.go
-  - docker build .
-
+  - docker run --rm -v $PWD:/src -v /var/run/docker.sock:/var/run/docker.sock centurylink/golang-builder
 arguments:
   - {key: HTTP_ENDPOINT, type: string}

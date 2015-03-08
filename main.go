@@ -1,4 +1,4 @@
-package main
+package main // import "github.com/rtlong/dispatch-http-ping"
 
 import (
 	"fmt"

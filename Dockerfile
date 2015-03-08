@@ -1,4 +1,3 @@
 FROM scratch
-MAINTAINER Jake Dahn <jake@markupisart.com>
-ADD bin/echo /echo
-ENTRYPOINT ["/echo"]
+ADD bin/http_ping /http_ping
+ENTRYPOINT ["/http_ping"]

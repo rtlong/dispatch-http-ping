@@ -1,11 +1,8 @@
-echo
-====
+# dispatch-http-ping
 
-[![Build Status](https://travis-ci.org/jakedahn/echo.png?branch=master)](https://travis-ci.org/jakedahn/echo)
+Small example application for [dispatch](//github.com/jakedahn/dispatch) which makes an HTTP POST request to an endpoint supplied via the `HTTP_ENDPOINT` environment variable.
 
-
-Small example application that prints out text from an environment variable, and sleeps for a random amount of time before exiting.
-
+Use it with a [RequestBin](http://requestb.in) or similar.
 
 #### License
 
